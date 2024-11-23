@@ -7,3 +7,4 @@ class User(Base):
     username = Column(String, unique=True, index=True)
     hashed_password = Column(String)
     role = Column(String)
+    token = Column(String, nullable=True)
